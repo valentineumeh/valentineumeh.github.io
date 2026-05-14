@@ -1,1 +1,229 @@
-Hi!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showSection('home')">My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home')" class="active">Home</a></li>
+                <li><a href="#" onclick="showSection('events')">Events</a></li>
+                <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+                <li><a href="#" onclick="showSection('media')">Media</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="home-content">
+                <div class="profile-section">
+                    <div class="profile-placeholder">
+                        <span>Your Photo Here</span>
+                    </div>
+                    <h1>Your Name</h1>
+                    <p class="tagline">Your Title/Role</p>
+                </div>
+                <div class="home-text">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p class="intro-text">
+                        Hello! I'm a passionate professional. This is my personal portfolio website where I showcase my work, experiences, and connect with others. Feel free to explore!
+                    </p>
+                    <div class="home-buttons">
+                        <button class="btn btn-primary" onclick="showSection('resume')">View My Resume</button>
+                        <button class="btn btn-secondary" onclick="showSection('contact')">Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section">
+            <h2>Events</h2>
+            <p class="section-description">Here are some events I've attended or organized.</p>
+            
+            <div class="events-container">
+                <!-- Event Card Template -->
+                <div class="event-card">
+                    <div class="event-image-placeholder">Event Image</div>
+                    <div class="event-details">
+                        <h3>Event Title 1</h3>
+                        <p class="event-date">Date: YYYY-MM-DD</p>
+                        <p class="event-location">Location: Place, City</p>
+                        <p class="event-description">Description of the event goes here...</p>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-image-placeholder">Event Image</div>
+                    <div class="event-details">
+                        <h3>Event Title 2</h3>
+                        <p class="event-date">Date: YYYY-MM-DD</p>
+                        <p class="event-location">Location: Place, City</p>
+                        <p class="event-description">Description of the event goes here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <h2>Resume</h2>
+            <p class="section-description">My professional experience and education.</p>
+            
+            <div class="resume-container">
+                <!-- Experience Section -->
+                <div class="resume-section">
+                    <h3>Work Experience</h3>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Job Title 1</h4>
+                            <span class="company">Company Name</span>
+                        </div>
+                        <p class="experience-dates">Jan 2023 - Present</p>
+                        <ul class="experience-bullets">
+                            <li>Bullet point description of responsibilities and achievements</li>
+                            <li>Another important responsibility</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Job Title 2</h4>
+                            <span class="company">Company Name</span>
+                        </div>
+                        <p class="experience-dates">Jan 2021 - Dec 2022</p>
+                        <ul class="experience-bullets">
+                            <li>Bullet point description of responsibilities and achievements</li>
+                            <li>Another important responsibility</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>Degree Name</h4>
+                            <span class="school">University Name</span>
+                        </div>
+                        <p class="education-dates">2017 - 2021</p>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="resume-section">
+                    <h3>Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Skill 1</span>
+                        <span class="skill-tag">Skill 2</span>
+                        <span class="skill-tag">Skill 3</span>
+                        <span class="skill-tag">Skill 4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="section">
+            <h2>Media</h2>
+            <p class="section-description">My portfolio pieces, projects, and creative work.</p>
+            
+            <div class="media-grid">
+                <!-- Media Item Template -->
+                <div class="media-item">
+                    <div class="media-image-placeholder">Project Image</div>
+                    <div class="media-content">
+                        <h3>Project Title 1</h3>
+                        <p class="media-description">Brief description of your project or work.</p>
+                        <div class="media-tags">
+                            <span class="tag">Category 1</span>
+                            <span class="tag">Category 2</span>
+                        </div>
+                        <a href="#" class="media-link">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-image-placeholder">Project Image</div>
+                    <div class="media-content">
+                        <h3>Project Title 2</h3>
+                        <p class="media-description">Brief description of your project or work.</p>
+                        <div class="media-tags">
+                            <span class="tag">Category 1</span>
+                            <span class="tag">Category 2</span>
+                        </div>
+                        <a href="#" class="media-link">View Project →</a>
+                    </div>
+                </div>
+                
+                <div class="media-item">
+                    <div class="media-image-placeholder">Project Image</div>
+                    <div class="media-content">
+                        <h3>Project Title 3</h3>
+                        <p class="media-description">Brief description of your project or work.</p>
+                        <div class="media-tags">
+                            <span class="tag">Category 1</span>
+                            <span class="tag">Category 2</span>
+                        </div>
+                        <a href="#" class="media-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p class="section-description">Get in touch with me!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">your.email@example.com</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+1 (123) 456-7890</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Your City, Your Country</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-label">Website</span>
+                        <span class="contact-value"><a href="#">yourwebsite.com</a></span>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form-wrapper">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        
